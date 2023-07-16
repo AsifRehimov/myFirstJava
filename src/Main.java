@@ -1,17 +1,34 @@
+import java.util.Scanner;
+
 public class Main {
 
-
-    static String Mehsul(String meyve){
-        return "1 kiloqram " + meyve;
-    };
-
-    static String Cekisi(int terevez, int bitki, String meyve){
-
-        return terevez*bitki + " qarpiz";
-    };
-
     public static void main(String[] args) {
-        Mehsul("heyva");
-        System.out.println(Cekisi(4,2,"alma"));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1-ci ədədi daxil edin:");
+        double first = sc.nextDouble();
+//        System.out.println("Riyazi əməli yazın");
+//        String math = sc.next();
+        System.out.println("2-ci ədədi daxil edin:");
+        double second = sc.nextDouble();
+        System.out.println("Cavab: +  " + (first  + second) );
+        System.out.println("Cavab: -  " + (first  - second) );
+        System.out.println("Cavab: *  " + (first  * second) );
+        System.out.println("Cavab: /  " + (first  / second) );
+//        switch(math) {
+//            case "+":
+//                System.out.println( first + second);
+//                break;
+//            case "-":
+//                System.out.println( first - second);
+//                break;
+//            case "/":
+//                System.out.println( first / second);
+//                break;
+//            case "*":
+//                System.out.println( first * second);
+//                break;
+//            default:
+//                System.out.println("belə əməl mövcud deyil.");
+//        }
     }
 }
